@@ -8,9 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
-    <!-- BRAND FAVICON UPDATE -->
-    <link rel="icon" type="image/png" href="Logo.png">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -51,16 +48,18 @@
     <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16 py-12 min-h-screen flex flex-col justify-between">
         <main class="flex-1">
             <header class="mb-12 md:mb-16">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center border-b border-slate-300 pb-6">
-                    <div class="flex flex-col max-w-[240px] md:max-w-[280px]">
-                        <a href="#" onclick="switchTab('about')" class="block">
-                            <img src="Logo.png" alt="Baiquni Hasbi" class="h-auto w-full object-contain">
-                        </a>
-                        <p class="text-xs text-slate-500 font-mono tracking-wider uppercase mt-3 pl-1">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline border-b border-slate-300 pb-6">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-bold tracking-tight">
+                            <a href="#" onclick="switchTab('about')" class="hover:text-[#7BAFD4] transition">Baiquni Hasbi</a>
+                        </h1>
+                        <p class="text-[#7BAFD4] italic mt-1 font-serif text-lg font-medium">
+                            Assistant Professor of Global History
+                        </p>
+                        <p class="text-xs text-slate-500 font-mono tracking-wider uppercase mt-1">
                             UIN Sultanah Nahrasiyah Lhokseumawe
                         </p>
                     </div>
-                    
                     <nav class="mt-6 md:mt-0">
                         <ul class="flex flex-wrap gap-x-6 gap-y-2 text-sm uppercase tracking-widest font-semibold text-slate-500">
                             <li><button onclick="switchTab('about')" id="nav-about" class="text-[#082240] border-b-2 border-[#082240] pb-1 transition font-bold">About</button></li>

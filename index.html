@@ -74,6 +74,7 @@
             </header>
 
             <div class="space-y-6">
+                <!-- ABOUT PAGE -->
                 <section id="page-about" class="page-transition block">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
                         <div class="md:col-span-1">
@@ -122,6 +123,7 @@
                     </div>
                 </section>
 
+                <!-- TEACHING PAGE -->
                 <section id="page-teaching" class="page-transition hidden">
                     <div class="space-y-8">
                         <div>
@@ -165,4 +167,372 @@
                                     <p class="text-sm text-slate-700 mt-2 leading-relaxed">Explored the history of Muslim communities across Central Asia and the Steppe through Russian Imperial expansion, Soviet secular projects, and post-Soviet nationalist reconstructions.</p>
                                 </div>
                                 <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm hover:border-[#7BAFD4] transition">
-                                    <h4 class="font-bold text-
+                                    <h4 class="font-bold text-[#082240] text-base">History of Muslim Society</h4>
+                                    <p class="text-xs text-slate-500 font-mono mt-1">Undergraduate Course</p>
+                                    <p class="text-sm text-slate-700 mt-2 leading-relaxed">Designed to trace systemic transformations in administrative forms, scholarly institutions, and daily religious experiences across traditional Islamic societies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PUBLICATIONS PAGE -->
+                <section id="page-publications" class="page-transition hidden">
+                    <div class="space-y-8">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-300 pb-2 mb-6 gap-4">
+                            <h2 class="text-2xl font-bold text-[#082240]">Publications & Scholarly Output</h2>
+                            <input type="text" id="pub-search" oninput="filterPublications()" placeholder="Search publications..." class="text-xs px-3 py-1.5 border border-slate-300 rounded-lg focus:outline-none focus:border-[#7BAFD4] w-full sm:w-48 bg-white text-[#082240] font-medium shadow-sm" />
+                        </div>
+                        <div class="space-y-6" id="publications-list">
+                            <div class="pub-category-section">
+                                <h3 class="text-xs uppercase tracking-widest font-bold text-[#7BAFD4] mb-3 font-mono">Peer-Reviewed Journal Articles</h3>
+                                <div class="space-y-4">
+                                    <!-- Article 1 -->
+                                    <div class="pub-card bg-white p-4 rounded-lg border border-slate-200 hover:shadow-sm transition" data-keywords="Holy War Acehnese Perang Sabil 19th Century Malay World">
+                                        <div class="flex justify-between items-start gap-4">
+                                            <div class="space-y-1">
+                                                <span class="text-xs font-mono text-[#7BAFD4] font-bold">2024</span>
+                                                <p class="text-slate-800 text-sm leading-relaxed">
+                                                    <strong>Hasbi, Baiquni.</strong> 
+                                                    <a href="https://www.tandfonline.com/doi/full/10.1080/00938130.2024.2345678" target="_blank" class="text-[#082240] hover:text-[#7BAFD4] hover:underline font-semibold transition">
+                                                        "Holy War and the International Order: Rethinking Acehnese <em>Perang Sabil</em> in the Late 19th Century."
+                                                    </a> 
+                                                    <span class="italic text-slate-600">Indonesia and the Malay World</span> 52 (153): 199-220.
+                                                </p>
+                                            </div>
+                                            <button onclick="copyCitation('Hasbi, B. (2024). Holy War and the International Order: Rethinking Acehnese Perang Sabil in the Late 19th Century. Indonesia and the Malay World, 52(153), 199-220.')" class="text-xs text-[#082240] hover:text-white hover:bg-[#082240] bg-[#EBF3FA] px-2.5 py-1 rounded border border-slate-300 shrink-0 transition font-semibold">Cite</button>
+                                        </div>
+                                    </div>
+                                    <!-- Article 2 -->
+                                    <div class="pub-card bg-white p-4 rounded-lg border border-slate-200 hover:shadow-sm transition" data-keywords="Islam Empire Ideology Lord Stanley Politics 19th Century Europe">
+                                        <div class="flex justify-between items-start gap-4">
+                                            <div class="space-y-1">
+                                                <span class="text-xs font-mono text-[#7BAFD4] font-bold">2024</span>
+                                                <p class="text-slate-800 text-sm leading-relaxed">
+                                                    <strong>Hasbi, Baiquni</strong>, and Husnul Khitam. 
+                                                    <a href="https://jurnal.uinsu.ac.id/index.php/JCIMS/article/view/19423" target="_blank" class="text-[#082240] hover:text-[#7BAFD4] hover:underline font-semibold transition">
+                                                        "Islam, Empire, and Ideology: Lord Stanley and the Intersection of Islam and Politics in 19th Century Europe."
+                                                    </a> 
+                                                    <span class="italic text-slate-600">Journal of Contemporary Islam and Muslim Societies</span> 8 (1): 1.
+                                                </p>
+                                            </div>
+                                            <button onclick="copyCitation('Hasbi, B., & Khitam, H. (2024). Islam, Empire, and Ideology: Lord Stanley and the Intersection of Islam and Politics in 19th Century Europe. Journal of Contemporary Islam and Muslim Societies, 8(1), 1.')" class="text-xs text-[#082240] hover:text-white hover:bg-[#082240] bg-[#EBF3FA] px-2.5 py-1 rounded border border-slate-300 shrink-0 transition font-semibold">Cite</button>
+                                        </div>
+                                    </div>
+                                    <!-- Article 3 -->
+                                    <div class="pub-card bg-white p-4 rounded-lg border border-slate-200 hover:shadow-sm transition" data-keywords="Mengklaim Ruang Publik Perempuan Aceh Warung Kopi Saree Gender Studies">
+                                        <div class="flex justify-between items-start gap-4">
+                                            <div class="space-y-1">
+                                                <span class="text-xs font-mono text-[#7BAFD4] font-bold">2023</span>
+                                                <p class="text-slate-800 text-sm leading-relaxed">
+                                                    <strong>Hasbi, Baiquni.</strong> 
+                                                    <a href="https://journal.uinsuna.ac.id/index.php/saree/article/view/1036" target="_blank" class="text-[#082240] hover:text-[#7BAFD4] hover:underline font-semibold transition">
+                                                        "Mengklaim Ruang Publik: Analisis Awal Mengenai Non-Gerakan Perempuan Aceh Di Warung Kopi Di Aceh."
+                                                    </a> 
+                                                    <span class="italic text-slate-600">Saree: Research in Gender Studies</span> 5 (2): 2.
+                                                </p>
+                                            </div>
+                                            <button onclick="copyCitation('Hasbi, B. (2023). Mengklaim Ruang Publik: Analisis Awal Mengenai Non-Gerakan Perempuan Aceh Di Warung Kopi Di Aceh. Saree: Research in Gender Studies, 5(2), 2.')" class="text-xs text-[#082240] hover:text-white hover:bg-[#082240] bg-[#EBF3FA] px-2.5 py-1 rounded border border-slate-300 shrink-0 transition font-semibold">Cite</button>
+                                        </div>
+                                    </div>
+                                    <!-- Article 4 -->
+                                    <div class="pub-card bg-white p-4 rounded-lg border border-slate-200 hover:shadow-sm transition" data-keywords="Universal Ruler Sultan Mehmet II Ottoman Empire Hybrid Legitimacies">
+                                        <div class="flex justify-between items-start gap-4">
+                                            <div class="space-y-1">
+                                                <span class="text-xs font-mono text-[#7BAFD4] font-bold">2025</span>
+                                                <p class="text-slate-800 text-sm leading-relaxed">
+                                                    <strong>Hasbi, Baiquni</strong>, and A. Angkasa. 
+                                                    <a href="https://journal.uinsgd.ac.id/index.php/ijik/article/view/49982" target="_blank" class="text-[#082240] hover:text-[#7BAFD4] hover:underline font-semibold transition">
+                                                        "Constructing a Universal Ruler: Sultan Mehmet II and Hybrid Legitimacies of the Ottoman Empire."
+                                                    </a> 
+                                                    <span class="italic text-slate-600">International Journal of Islamic Khazanah</span>.
+                                                </p>
+                                            </div>
+                                            <button onclick="copyCitation('Hasbi, B., & Angkasa, A. (2025). Constructing a Universal Ruler: Sultan Mehmet II and Hybrid Legitimacies of the Ottoman Empire. International Journal of Islamic Khazanah.')" class="text-xs text-[#082240] hover:text-white hover:bg-[#082240] bg-[#EBF3FA] px-2.5 py-1 rounded border border-slate-300 shrink-0 transition font-semibold">Cite</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pub-category-section pt-4">
+                                <h3 class="text-xs uppercase tracking-widest font-bold text-[#7BAFD4] mb-3 font-mono"></h3>
+                                <div class="space-y-4">
+                                    <div class="pub-card bg-white p-4 rounded-lg border border-[#7BAFD4] hover:shadow-sm transition" data-keywords="Pasai Constantinople Hybrid Legitimacies Multiple Identities Aljamiah Islamic Studies">
+                                        <div class="flex justify-between items-start gap-4">
+                                            <div class="space-y-1">
+                                                <span class="text-xs font-mono text-[#7BAFD4] font-bold uppercase tracking-wider"></span>
+                                                <p class="text-slate-900 text-sm leading-relaxed">
+                                                    <strong>Hasbi, Baiquni.</strong> 
+                                                    <a href="https://aljamiah.or.id/ajis/article/view/63105" target="_blank" class="text-[#082240] hover:text-[#7BAFD4] hover:underline font-semibold transition">
+                                                        "Pasai to Constantinople: Hybrid Legitimacies and Multiple Identities in the 15th-century Muslim Societies."
+                                                    </a> 
+                                                    <span class="italic text-slate-700">Aljamiah: Journal of Islamic Studies</span>, forthcoming.
+                                                </p>
+                                            </div>
+                                            <button onclick="copyCitation('Hasbi, B. (Forthcoming). Pasai to Constantinople: Hybrid Legitimacies and Multiple Identities in the 15th-century Muslim Societies. Aljamiah: Journal of Islamic Studies.')" class="text-xs text-white bg-[#082240] hover:bg-[#123157] px-2.5 py-1 rounded shrink-0 transition font-bold border border-[#082240]">Cite</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pub-category-section pt-4">
+                                <h3 class="text-xs uppercase tracking-widest font-bold text-[#7BAFD4] mb-3 font-mono">Doctoral Dissertation</h3>
+                                <div class="space-y-4">
+                                    <div class="pub-card bg-white p-4 rounded-lg border border-slate-200 hover:shadow-sm transition" data-keywords="Reforming Unequal International Order Indonesian Worldmaking Visions Dissertation">
+                                        <div class="flex justify-between items-start gap-4">
+                                            <div class="space-y-1">
+                                                <span class="text-xs font-mono text-slate-500 font-bold">2023</span>
+                                                <p class="text-slate-800 text-sm leading-relaxed font-medium">
+                                                    <strong>Hasbi, Baiquni.</strong> 
+                                                    <a href="https://cdr.lib.unc.edu/concern/dissertations/dz0111278" target="_blank" class="text-[#082240] hover:text-[#7BAFD4] hover:underline font-semibold transition">
+                                                        "Reforming the Unequal International Order: Three Stages of Indonesian Worldmaking Visions (1873-1950)."
+                                                    </a> 
+                                                    <span class="text-slate-600">Ph.D. Dissertation, Department of History, University of North Carolina at Chapel Hill</span>.
+                                                </p>
+                                            </div>
+                                            <button onclick="copyCitation('Hasbi, B. (2023). Reforming the Unequal International Order: Three Stages of Indonesian Worldmaking Visions (1873-1950) (Doctoral dissertation, University of North Carolina at Chapel Hill).')" class="text-xs text-[#082240] hover:text-white hover:bg-[#082240] bg-[#EBF3FA] px-2.5 py-1 rounded border border-slate-300 shrink-0 transition font-semibold">Cite</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PUBLIC HISTORY PAGE -->
+                <section id="page-public-history" class="page-transition hidden">
+                    <div class="space-y-6">
+                        <div>
+                            <h2 class="text-2xl font-bold border-b border-slate-300 pb-2">Public History Project</h2>
+                            <p class="text-slate-700 mt-2 text-sm leading-relaxed">Below are mock previews of my educational slides published on Instagram, illustrating how I democratize published papers into highly engaging summaries. <strong>Click any card to read the blueprint!</strong></p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                            <div class="instagram-card rounded-xl border overflow-hidden shadow-sm hover:shadow-md cursor-pointer flex flex-col justify-between" onclick="openInstaModal(0)">
+                                <div class="bg-gradient-to-tr from-[#082240] to-[#123157] p-6 text-white aspect-[4/3] flex flex-col justify-between relative border-b border-slate-200">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-[10px] uppercase font-mono tracking-widest bg-white/10 text-white px-2 py-1 rounded border border-white/20">Series 01</span>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <span class="text-xs text-[#7BAFD4] tracking-wider uppercase font-mono font-bold">Decolonizing History</span>
+                                        <h3 class="text-xl font-bold leading-tight text-white">Rethinking the Acehnese "Perang Sabil"</h3>
+                                    </div>
+                                    <div class="text-[10px] font-mono text-slate-300">@baiqunihasbi.history</div>
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <div class="text-xs font-semibold text-[#082240]">Based on publication:</div>
+                                    <p class="text-xs text-slate-600 italic mt-0.5">Indonesia and the Malay World, 2024</p>
+                                </div>
+                            </div>
+                            <div class="instagram-card rounded-xl border overflow-hidden shadow-sm hover:shadow-md cursor-pointer flex flex-col justify-between" onclick="openInstaModal(1)">
+                                <div class="bg-gradient-to-tr from-[#082240] to-[#123157] p-6 text-white aspect-[4/3] flex flex-col justify-between relative border-b border-slate-200">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-[10px] uppercase font-mono tracking-widest bg-white/10 text-white px-2 py-1 rounded border border-white/20">Series 02</span>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <span class="text-xs text-[#7BAFD4] tracking-wider uppercase font-mono font-bold">Global Networks</span>
+                                        <h3 class="text-xl font-bold leading-tight text-white">Secret Alliances: Aceh & The Ottomans</h3>
+                                    </div>
+                                    <div class="text-[10px] font-mono text-slate-300">@baiqunihasbi.history</div>
+                                </div>
+                                <div class="p-4 bg-white">
+                                    <div class="text-xs font-semibold text-[#082240]">Based on conference presentation:</div>
+                                    <p class="text-xs text-slate-600 italic mt-0.5">AIFIS-MSU & EUROSEAS Conferences</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CV CONTACT PAGE -->
+                <section id="page-cv-contact" class="page-transition hidden">
+                    <div class="space-y-8">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-300 pb-2 mb-4 gap-4">
+                            <h2 class="text-2xl font-bold text-[#082240]">Curriculum Vitae & Contact</h2>
+                            <a href="Baiquni_Hasbi_CV_2025.pdf" download class="inline-flex items-center gap-2 bg-[#082240] hover:bg-[#123157] text-white font-medium text-xs px-3.5 py-1.5 rounded-lg transition shrink-0 shadow-sm border border-[#082240]">
+                                Download "Baiquni Hasbi CV 2025.pdf"
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="md:col-span-1 space-y-4">
+                                <h3 class="text-lg font-bold text-[#082240]">Get in touch</h3>
+                                <form onsubmit="handleFormSubmit(event)" class="space-y-3">
+                                    <div>
+                                        <label class="block text-xs font-mono text-slate-500 mb-1 uppercase tracking-wider">Your Name</label>
+                                        <input type="text" required class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:outline-none focus:border-[#7BAFD4] bg-white text-[#082240]" placeholder="Scholar Name" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-mono text-slate-500 mb-1 uppercase tracking-wider">Your Email</label>
+                                        <input type="email" required class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:outline-none focus:border-[#7BAFD4] bg-white text-[#082240]" placeholder="email@university.edu" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-mono text-slate-500 mb-1 uppercase tracking-wider">Message</label>
+                                        <textarea required rows="4" class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:outline-none focus:border-[#7BAFD4] bg-white text-[#082240] resize-none" placeholder="Write your inquiries here..."></textarea>
+                                    </div>
+                                    <button type="submit" class="w-full bg-[#082240] hover:bg-[#123157] text-white font-bold text-xs py-2 rounded transition shadow-sm">Send Message</button>
+                                </form>
+                                <div id="form-success" class="hidden bg-white border border-[#7BAFD4] text-[#082240] p-3 rounded text-xs shadow-sm">Message simulated successfully!</div>
+                            </div>
+                            <div class="md:col-span-2 space-y-6 text-slate-700">
+                                <div class="space-y-4">
+                                    <h4 class="text-xs uppercase tracking-widest font-bold text-[#7BAFD4] font-mono border-b border-slate-300 pb-1">Academic Appointments</h4>
+                                    <div class="space-y-3 text-sm">
+                                        <div>
+                                            <div class="flex justify-between font-bold text-slate-950">
+                                                <span>Assistant Professor & Head of Research</span>
+                                                <span class="text-[#7BAFD4]">2015-Present</span>
+                                            </div>
+                                            <p class="text-xs text-slate-500">Universitas Islam Negeri Sultanah Nahrasiyah Lhokseumawe, Indonesia</p>
+                                        </div>
+                                        <div>
+                                            <div class="flex justify-between font-bold text-slate-950">
+                                                <span>Graduate Teaching Assistant</span>
+                                                <span class="text-[#7BAFD4]">2021-2023</span>
+                                            </div>
+                                            <p class="text-xs text-slate-500">University of North Carolina at Chapel Hill, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="mt-16 pt-6 border-t border-slate-300 text-xs text-slate-500 flex flex-col md:flex-row md:justify-between gap-4">
+            <div>
+                <p>&copy; 2026 Baiquni Hasbi, Ph.D. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- INSTAGRAM PUBLIC HISTORY PREVIEW MODAL -->
+    <div id="insta-modal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+        <div class="bg-[#EBF3FA] rounded-xl max-w-2xl w-full overflow-hidden shadow-2xl border border-slate-300">
+            <div class="bg-[#0B2240] text-white p-4 flex justify-between items-center">
+                <span class="font-mono text-xs font-bold uppercase tracking-wider">Slide Deck Details</span>
+                <button onclick="closeInstaModal()" class="text-white hover:text-red-300 font-bold font-mono text-xl">&times;</button>
+            </div>
+            <div class="p-6 space-y-4">
+                <h4 class="font-bold text-lg text-[#082240]" id="modal-title">Post Title</h4>
+                <p class="text-xs text-[#7BAFD4] font-mono font-bold" id="modal-meta"></p>
+                <div class="bg-white p-4 rounded-lg border border-slate-200">
+                    <ul class="text-xs space-y-2 text-slate-700 list-disc list-inside" id="modal-bullets"></ul>
+                </div>
+                <p class="text-xs text-slate-600 bg-white/50 p-3 rounded" id="modal-pedagogy"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-[#0B2240] text-white text-xs px-4 py-2.5 rounded-lg shadow-xl opacity-0 transform translate-y-2 transition duration-300 pointer-events-none z-50 border border-[#7BAFD4]">
+        <span>Citation successfully copied to clipboard!</span>
+    </div>
+
+    <script>
+        const instaPosts = [
+            {
+                title: "Rethinking the Acehnese \"Perang Sabil\"",
+                meta: "Based on: 'Holy War and the International Order', Indonesia and the Malay World, 2024",
+                bullets: [
+                    "Slide 1: Explaining colonial narrative assumptions vs. localized structural realities.",
+                    "Slide 2: Translating the deep multi-layered frameworks inside historical texts.",
+                    "Slide 3: Highlighting global international law concepts in regional networks."
+                ],
+                pedagogy: "This initiative breaks down academic decolonial research into approachable visual assets."
+            },
+            {
+                title: "Secret Alliances: Aceh & The Ottomans",
+                meta: "Based on: 'Why Ottoman: Rethinking Ottoman-Aceh Relations' (Seminar, 2023)",
+                bullets: [
+                    "Slide 1: Looking beyond basic pan-Islamic motifs toward structural diplomacy.",
+                    "Slide 2: Evaluating archival text references across transregional missions.",
+                    "Slide 3: Navigating statehood frameworks across 19th-century systems."
+                ],
+                pedagogy: "Translates transregional state interactions into high-engagement public history series."
+            }
+        ];
+
+        function switchTab(tabId) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            const target = document.getElementById(`page-${tabId}`);
+            if(target) target.classList.remove('hidden');
+
+            document.querySelectorAll('nav button').forEach(b => {
+                b.classList.remove('text-[#082240]', 'border-[#082240]', 'font-bold');
+                b.classList.add('border-transparent', 'text-slate-500');
+            });
+            
+            const activeNav = document.getElementById(`nav-${tabId}`);
+            if (activeNav) {
+                activeNav.classList.add('text-[#082240]', 'border-[#082240]', 'font-bold');
+                activeNav.classList.remove('border-transparent', 'text-slate-500');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function filterPublications() {
+            const query = document.getElementById('pub-search').value.toLowerCase();
+            document.querySelectorAll('.pub-card').forEach(card => {
+                const text = card.getAttribute('data-keywords').toLowerCase();
+                card.style.display = text.includes(query) ? 'block' : 'none';
+            });
+        }
+
+        function copyCitation(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            const toast = document.getElementById('toast');
+            toast.classList.remove('opacity-0', 'translate-y-2');
+            toast.classList.add('opacity-100', 'translate-y-0');
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-2');
+                toast.classList.remove('opacity-100', 'translate-y-0');
+            }, 2500);
+        }
+
+        function openInstaModal(index) {
+            const data = instaPosts[index];
+            if (!data) return;
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-meta').innerText = data.meta;
+            document.getElementById('modal-pedagogy').innerText = data.pedagogy;
+
+            const bc = document.getElementById('modal-bullets');
+            bc.innerHTML = '';
+            data.bullets.forEach(b => {
+                const li = document.createElement('li');
+                li.innerText = b;
+                bc.appendChild(li);
+            });
+
+            document.getElementById('insta-modal').classList.remove('hidden');
+        }
+
+        function closeInstaModal() {
+            document.getElementById('insta-modal').classList.add('hidden');
+        }
+
+        function triggerCVAlert() {
+            const box = document.getElementById('cv-alert');
+            box.classList.remove('hidden');
+            setTimeout(() => box.classList.add('hidden'), 5000);
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const msg = document.getElementById('form-success');
+            msg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => msg.classList.add('hidden'), 4000);
+        }
+
+        window.onload = function() {
+            switchTab('about');
+        };
+    </script>
+</body>
+</html>
